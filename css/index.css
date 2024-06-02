@@ -1,0 +1,18 @@
+html, body {
+    height: 100%;
+}
+body {
+    background-image: url('../images/Background.jpg');
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    flex: 0 0 auto;
+}
+iframe {
+    flex: 1 1 auto;
+    width: 100%;
+    border: none;
+}

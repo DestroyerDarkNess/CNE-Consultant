@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="./css/home.css" />
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="d-flex align-items-center justify-content-center"></div>
+
+    <img
+      src="./images/Logo.png"
+      alt="Logo"
+      class="logo" />
+
+    <div class="container h-100">
+      <div class="d-flex justify-content-center h-100">
+        <div class="searchbar">
+          <div class="select_container">
+            <select
+              class="search_select"
+              name="typeDni"
+              id="typeDni">
+              <option value="V">V</option>
+              <option value="E">E</option>
+            </select>
+          </div>
+          <input
+            class="search_input"
+            type="text"
+            name="search"
+            placeholder="Cédula..." />
+          <a
+            href="#"
+            class="search_icon"
+            id="searchButton"
+            ><i class="fas fa-search"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="preview-container">
+        <div id="preview-result"></div>
+      </div>
+
+      <div
+        id="loading_status"
+        class="spinner-grow fixed-bottom text-light visually-hidden"
+        role="status" />
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script
+      type="module"
+      src="./js/home.js"></script>
+  </body>
+</html>
